@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Le Castell</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        
+        <nav>
+            <div class="image-container">
+                <a href="./index.html"><img src="./ressources/logo.png" alt="Le Castell"></a>
+            </div>
+            <div class="onglets">
+                <a href="">Home</a>
+                <a href="./menu_card.html">Menus</a>
+                <a href="./wine_card.html">Vins</a>
+                <a href="./drinks.html">Cocktails et Boissons</a>
+                <a href="./photos.html">Photos</a>
+                <a href="./contact">Contact</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Bienvenue</h1>
+            <h4>Ouvert tous les jours à partir de 19h30</h4>
+        </header>
+
+        <main>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="./ressources/salade.jpg">
+                    <div class="box">
+                        <p>Salade de saison</p>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img src="./ressources/viande.jpg">
+                    <div class="box">
+                        <p>Brochette de viandes</p>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img src="./ressources/dessert.jpg">
+                    <div class="box">
+                        <p>Crème catalane</p>
+                    </div>
+                </div>
+                
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+        </main>
+
+        
+
+        <footer>
+            <h1>Nos services</h1>
+            <div class="services">
+                <div class="service">
+                    <h3>Livraison gratuite</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, alias praesentium sapiente est debitis eos saepe illum, sed dolorum necessitatibus repudiandae tempore id? Sunt adipisci, voluptatum vel veritatis facilis esse!</p>
+                </div>
+                <div class="service">
+                    <h3>Paiement en ligne</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, alias praesentium sapiente est debitis eos saepe illum, sed dolorum necessitatibus repudiandae tempore id? Sunt adipisci, voluptatum vel veritatis facilis esse!</p>
+                </div>
+                <div class="service">
+                    <h3>Aimé ou remboursé</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, alias praesentium sapiente est debitis eos saepe illum, sed dolorum necessitatibus repudiandae tempore id? Sunt adipisci, voluptatum vel veritatis facilis esse!</p>
+                </div>
+            </div>
+
+            <p id="contact">Contact : 04 68 80 72 08 | &copy; 2023, Le Castell</p>
+        </footer>
+    </body>
+</html>

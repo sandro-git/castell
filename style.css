@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+}
+
+body .image-container a {
+    width: 9rem;
+    transition: ease 0.3s;
+}
+
+body .image-container a:hover{
+    opacity: 0.7;
+    transition: ease 0.3s;
+}
+
+body .image-container a img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 9rem;
+}
+
+nav{
+    display:grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.35rem solid #6f6f6f;
+}
+
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+nav .onglets{
+    display: flex;
+    margin-top: 0.1rem;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+nav .onglets :hover{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 1rem;
+    border-bottom: 0.2rem solid #000000;
+    padding-bottom: 0.3rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url('./ressources/front.jpg');
+    background-position: center 50%;
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Resize the background image to cover the entire background */
+    color: #ffffff;
+    padding: 5rem;
+}
+
+header::before {
+opacity: 1; /* Set the opacity to 1 on hover to show the gradient background */
+}
+
+header h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3rem;
+}
+
+header h4{
+    margin-top: -1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 0.12rem solid #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+main .slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 40rem;
+    max-height: 40rem;
+}
+  
+main .slideshow-container .slide {
+    display: none;
+}
+  
+main .slideshow-container .slide.active {
+    position: relative;
+    display: block;
+}
+
+main .slideshow-container .slide img {
+    width: 21.875rem;  /*43.75rem*/
+    height: 29.155rem; /*58.31rem*/
+}
+
+main .slideshow-container .slide .box {
+    position: absolute;
+    background-color: rgb(65, 65, 65);
+    width: 21.875rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+main .slideshow-container .slide .box p {
+    text-align: center;
+    font-size: 1.75rem;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+  
+main .slideshow-container .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    user-select: none;
+}
+  
+main .slideshow-container .prev {
+    left: 1rem;
+}
+  
+main .slideshow-container .next {
+    right: 1rem;
+}
+
+footer{
+    margin-top: 6rem;
+    border-top: 0.4rem solid #6f6f6f;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 100px;
+}
+
+footer h1{
+    font-family: 'Playfair Display', sans-serif;
+    border-bottom: 1px solid #ffffff;
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+footer .services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+}
+
+footer .services .service p{
+    max-width: 300px;
+}
+
+footer #contact{
+    color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width:680px) {
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    footer{
+        padding: 30px;
+    }
+}
+
